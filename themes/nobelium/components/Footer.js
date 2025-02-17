@@ -23,7 +23,9 @@ export const Footer = (props) => {
          <p>
            © {siteConfig('AUTHOR')} {copyrightDate}
          </p>
-         <SocialButton />
+         <div className='flex items-center gap-x-4'>
+           <SocialButton />
+         <div>
        </div>
      </div>
    </footer>
