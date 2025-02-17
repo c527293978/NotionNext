@@ -9,7 +9,7 @@ const Style = () => {
     
     // 底色
     .dark body{
-        background-color: #181818;
+        background-color: #1a1a1a;
     }
 
   `}</style>
