@@ -1,7 +1,6 @@
 import DarkModeButton from '@/components/DarkModeButton'
 import Vercel from '@/components/Vercel'
 import { siteConfig } from '@/lib/config'
-import SocialButton from './SocialButton'
 
 export const Footer = (props) => {
   const d = new Date()
@@ -23,9 +22,13 @@ export const Footer = (props) => {
          <p>
            © {siteConfig('AUTHOR')} {copyrightDate}
          </p>
-         <div className='flex items-center gap-x-4'>
-           <SocialButton />
-         <div>
+         <a
+           target='_blank'
+           rel='noreferrer'
+           title={'RSS'}
+           href={'/rss/feed.xml'}>
+           <i className='transform hover:scale-125 duration-150 fas fa-rss ' />
+         </a>
        </div>
      </div>
    </footer>
